@@ -1,0 +1,20 @@
+{% extends 'max/main.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+    <h1>Главная страница</h1>
+    {% if task %}
+        {% for i in task %}
+            <div>
+                <h3>{{ i.title }}</h3>
+                <p>{{ i.task }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+    <p>У нас нет записей</p>
+    {% endif %}
+    <p>admin:123</p> 
+{% endblock %}
