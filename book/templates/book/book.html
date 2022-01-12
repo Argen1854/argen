@@ -1,0 +1,11 @@
+{% extends 'max/main.html' %}
+
+{% block title %}
+Домашка 2
+{% endblock %}
+
+{% block content %}
+    <h2>{{ book.title }}</h2>
+    <p>{{ book.description }}</p>
+    <img src="{{ book.image.url }}" alt=""> 
+{% endblock %}
